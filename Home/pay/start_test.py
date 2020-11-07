@@ -1,30 +1,25 @@
 from appium import webdriver
 import time
-import device_init
-import User_Login
-from Home.pay.Pay import Pay
-from Home.pay.Households import Households
-
-
-def home_page():
-    # 加入注册信息启动app
-    desired_caps = device_init.appInit()
-    driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_caps)
-    time.sleep(2)
-    # APP初始化权限
-    device_init.jurisdiction_init(driver, time)
-    # 登录
-    User_Login.user_login(driver, time)
-    return driver
+from public_config.device_init import Device_Init
+from public_config.Mobile_Jurisdiction import Mobile_Jurisdiction
+from public_config.User_Login import User_Login
+from pay import Pay
+from pay.Households import Households
 
 
 if __name__ == "__main__":
-    driver = home_page()
-
-    pay = Pay(driver)
-    households = Households(driver)
-
-    households.switch_House()
-    pay.switch_pay()
+    # 加入注册信息启动app
+    driver = Device_Init().get_driver()
+    # APP初始化权限
+    Mobile_Jurisdiction(driver)
+    # 登录
+    User_Login(driver).user_login("18334783765", "123456")
+    driver.quit()
+    #
+    # pay = Pay(driver)
+    # households = Households(driver)
+    #
+    # households.switch_House()
+    # pay.switch_pay()
 
 
