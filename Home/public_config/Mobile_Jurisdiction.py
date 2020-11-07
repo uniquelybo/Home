@@ -1,5 +1,5 @@
 from selenium.webdriver.support.wait import WebDriverWait
-import sys, time
+import sys
 
 
 class Mobile_Jurisdiction(object):
