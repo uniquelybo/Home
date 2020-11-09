@@ -7,7 +7,7 @@ class Device_Init(object):
         self.desired_caps = {}
         self.desired_caps['platformName'] = 'Android'
         self.desired_caps['platformVersion'] = '10'
-        self.desired_caps['deviceName'] = '华为P40'
+        self.desired_caps['deviceName'] = '荣耀'
         self.desired_caps['appPackage'] = 'com.ttmv.myhome'
         self.desired_caps['appActivity'] = '.ui.activity.SplashActivity'
         print(self.desired_caps)
