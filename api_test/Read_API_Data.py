@@ -1,9 +1,10 @@
 import pandas as pd
-from api_test.API_Request import API_Request
 import datetime
 from api_test import Request_Get_Token
+from api_test.API_Request import API_Request
 
-class Read_API_Data():
+
+class Read_API_Data:
     # 读取所有接口数据
     def __init__(self):
         self.api_file = pd.read_excel("API.xls")

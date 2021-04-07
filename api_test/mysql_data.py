@@ -2,8 +2,6 @@ import pymysql
 import configparser
 
 
-# class Mysql_Data():
-    # @classmethod
 def get_conn():
     cfg = configparser.ConfigParser()
     cfg.read("config/config.ini", encoding='utf-8')

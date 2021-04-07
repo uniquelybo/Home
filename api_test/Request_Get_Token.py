@@ -13,6 +13,6 @@ def get_token():
         print(token)
         return token
     except Exception as ex:
-        print("token获取失败。。。。", ex)
+        print("token获取失败.....", ex)
         sys.exit()
 

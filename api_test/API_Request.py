@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 
-class API_Request():
+class API_Request:
     def __init__(self, api_data, token):
         self.url = api_data['url']
         self.method = api_data['method']
