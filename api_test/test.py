@@ -54,6 +54,7 @@ from email.mime.application import MIMEApplication
 
 # if __name__ == "__main__":
 #     unittest.main()
+print(datetime.datetime.now())
 read_api = Read_API_Data()
 read_api.execute_api()
 url = "http://liveapi.ttmv.com/MobileLive/getLastOpus"
