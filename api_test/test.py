@@ -1,7 +1,7 @@
 import datetime
 import requests
-from api_test.Read_API_Data import Read_API_Data
-from api_test.Request_Get_Token import get_token
+from Read_API_Data import Read_API_Data
+from Request_Get_Token import get_token
 import unittest
 import smtplib
 from email.mime.text import MIMEText
