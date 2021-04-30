@@ -1,7 +1,7 @@
 import pandas as pd
 import datetime
-from api_test import Request_Get_Token
-from api_test.API_Request import API_Request
+import Request_Get_Token
+from API_Request import API_Request
 
 
 class Read_API_Data:
