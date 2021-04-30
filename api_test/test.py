@@ -54,16 +54,16 @@ class Test(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-print(datetime.datetime.now())
-read_api = Read_API_Data()
-read_api.execute_api()
-url = "http://liveapi.ttmv.com/MobileLive/getLastOpus"
-data = {"token_userid": 348295,
-        "anchorid": 346696,
-        "version": "4.6.3",
-        "device": 2,
-        "platform": 1,
-        "token": "qrex6kfspjx0a5i2"}
-response = requests.post(url=url, data=data)
-print(response.content.decode("utf-8"))
-requests.post()
+    print(datetime.datetime.now())
+    read_api = Read_API_Data()
+    read_api.execute_api()
+    url = "http://liveapi.ttmv.com/MobileLive/getLastOpus"
+    data = {"token_userid": 348295,
+            "anchorid": 346696,
+            "version": "4.6.3",
+            "device": 2,
+            "platform": 1,
+            "token": "qrex6kfspjx0a5i2"}
+    response = requests.post(url=url, data=data)
+    print(response.content.decode("utf-8"))
+    requests.post()
