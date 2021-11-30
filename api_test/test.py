@@ -10,7 +10,7 @@ from email.mime.application import MIMEApplication
 
 class Test(unittest.TestCase):
     @classmethod
-    def setUpClass(cls) -> None:
+    def setUpClass(cls):
         # cls.read_api = Read_API_Data()
         # cls.token = get_token()
         print(datetime.datetime.now())
@@ -28,18 +28,18 @@ class Test(unittest.TestCase):
         requests.post()
         print("----")
 
-    def setUp(self) -> None:
+    def setUp(self):
         print("执行之前")
 
 
     def test_api(self):
         print("----执行")
 
-    def tearDown(self) -> None:
+    def tearDown(self):
         print("执行之后")
 
     @classmethod
-    def tearDownClass(cls) -> None:
+    def tearDownClass(cls):
         print(datetime.datetime.now())
         from_username = "uniquelybo@163.com"
         from_password = "CSEXBHFAMLOYAHYC"
