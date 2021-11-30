@@ -1,3 +1,4 @@
+# encoding=utf-8
 import datetime
 import requests
 from Read_API_Data import Read_API_Data
